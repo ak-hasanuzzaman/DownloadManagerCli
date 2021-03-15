@@ -14,7 +14,7 @@ namespace DownloadManagerCli.Engine
         {
             switch (sourceType)
             {
-                case nameof(DownloadSourceEnum.YMAL):
+                case nameof(DownloadSourceEnum.YAML):
                 case nameof(DownloadSourceEnum.YML):
                     return new ReadYamlSource();
                 case nameof(DownloadSourceEnum.JSON):

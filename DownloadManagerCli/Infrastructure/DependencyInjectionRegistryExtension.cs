@@ -8,6 +8,7 @@
     using Microsoft.Extensions.Logging;
     using Serilog;
 
+
     internal static class DependencyInjectionRegistryExtension
     {
         public static void AddApplicationServices(this ServiceCollection services, IConfiguration configuration)

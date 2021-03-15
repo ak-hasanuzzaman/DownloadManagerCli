@@ -1,12 +1,3 @@
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.deps.json
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.dll
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.pdb
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.csprojAssemblyReference.cache
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.AssemblyInfoInputs.cache
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.AssemblyInfo.cs
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.csproj.CoreCompileInputs.cache
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.dll
-C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.pdb
 C:\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.deps.json
 C:\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.dll
 C:\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.pdb
@@ -15,3 +6,11 @@ C:\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadM
 C:\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.csproj.CoreCompileInputs.cache
 C:\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.dll
 C:\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.pdb
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.deps.json
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\bin\Debug\netcoreapp3.1\DownloadManagerCli.Model.pdb
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.AssemblyInfoInputs.cache
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.AssemblyInfo.cs
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.csproj.CoreCompileInputs.cache
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Model\obj\Debug\netcoreapp3.1\DownloadManagerCli.Model.pdb
