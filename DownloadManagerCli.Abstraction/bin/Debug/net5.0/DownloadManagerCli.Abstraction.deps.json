@@ -246,7 +246,7 @@
     "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3ycnTwLNZTTCyhtZ19e6QIkyIG98MqrnuMtdF6c3cw5JD9Sot34nremRrJGoBdOQe2PcLER2p67q/XhVqaWk3g==",
+      "sha512": "sha512-ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
     },
@@ -274,7 +274,7 @@
     "Microsoft.Extensions.Options/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j/Xf3RwSBHya/vKNlpbl8lgrml8RTLwOrCYYfQ5de8ET7AZEi6dVeOjgfPGXvRm6MLueH+CCszPHghkZgcNFmg==",
+      "sha512": "sha512-CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
       "path": "microsoft.extensions.options/5.0.0",
       "hashPath": "microsoft.extensions.options.5.0.0.nupkg.sha512"
     },
@@ -288,7 +288,7 @@
     "Microsoft.Extensions.Primitives/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PlGYfiZ4HdBDRRf4f/l9bf5ZmlUUZvHJMVKe+ch1GrvCnsK95Gkl84xW/V5xON6cjHqaddQQMp2neg6jML/37g==",
+      "sha512": "sha512-cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
       "path": "microsoft.extensions.primitives/5.0.0",
       "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
     },

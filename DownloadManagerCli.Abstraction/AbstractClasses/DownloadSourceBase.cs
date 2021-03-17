@@ -5,7 +5,7 @@
     public abstract class DownloadSourceBase
     {
         protected abstract Source ConverSourceToObject(string fileText);
-        public virtual Source GetDownloadSourceFromFile(string path)
+        public virtual Source GetSourceObjectFromFile(string path)
         {
             var source = File.ReadAllText(path);
             var downloadSource = ConverSourceToObject(source);

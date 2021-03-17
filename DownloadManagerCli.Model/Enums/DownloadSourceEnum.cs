@@ -2,8 +2,9 @@
 {
     public enum DownloadSourceEnum
     {
-        YAML,
+        YMAL,
         YML,
-        JSON
+        JSON,
+        XML
     }
 }

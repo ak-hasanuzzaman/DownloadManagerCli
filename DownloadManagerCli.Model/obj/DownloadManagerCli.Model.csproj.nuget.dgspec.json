@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {}
+    "C:\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {
+    "C:\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
+        "projectUniqueName": "C:\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
         "projectName": "DownloadManagerCli.Model",
-        "projectPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
-        "packagesPath": "C:\\Users\\akhas\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\obj\\",
+        "projectPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
+        "packagesPath": "C:\\Users\\ahasanuz\\.nuget\\packages\\",
+        "outputPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\akhas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ahasanuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

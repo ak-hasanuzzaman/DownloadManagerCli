@@ -367,7 +367,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
-      "sha512": "3ycnTwLNZTTCyhtZ19e6QIkyIG98MqrnuMtdF6c3cw5JD9Sot34nremRrJGoBdOQe2PcLER2p67q/XhVqaWk3g==",
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
       "files": [
@@ -447,7 +447,7 @@
       ]
     },
     "Microsoft.Extensions.Options/5.0.0": {
-      "sha512": "j/Xf3RwSBHya/vKNlpbl8lgrml8RTLwOrCYYfQ5de8ET7AZEi6dVeOjgfPGXvRm6MLueH+CCszPHghkZgcNFmg==",
+      "sha512": "CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
       "type": "package",
       "path": "microsoft.extensions.options/5.0.0",
       "files": [
@@ -489,7 +489,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/5.0.0": {
-      "sha512": "PlGYfiZ4HdBDRRf4f/l9bf5ZmlUUZvHJMVKe+ch1GrvCnsK95Gkl84xW/V5xON6cjHqaddQQMp2neg6jML/37g==",
+      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
       "type": "package",
       "path": "microsoft.extensions.primitives/5.0.0",
       "files": [
@@ -553,23 +553,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akhas\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ahasanuz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+      "projectUniqueName": "C:\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
       "projectName": "DownloadManagerCli.Engine",
-      "projectPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
-      "packagesPath": "C:\\Users\\akhas\\.nuget\\packages\\",
-      "outputPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\obj\\",
+      "projectPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+      "packagesPath": "C:\\Users\\ahasanuz\\.nuget\\packages\\",
+      "outputPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Engine\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\akhas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahasanuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -583,8 +579,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj": {
-              "projectPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj"
+            "C:\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj": {
+              "projectPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj"
             }
           }
         }
@@ -619,7 +615,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

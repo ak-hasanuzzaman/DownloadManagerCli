@@ -2,6 +2,6 @@
 {
     public interface IValidateSource
     {
-        public void Validate();
+        public void Validate(string sourceFile);
     }
 }

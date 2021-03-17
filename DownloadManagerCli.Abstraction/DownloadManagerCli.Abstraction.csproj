@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interfaces\IContentWriter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DownloadManagerCli.Model\DownloadManagerCli.Model.csproj" />
   </ItemGroup>
 

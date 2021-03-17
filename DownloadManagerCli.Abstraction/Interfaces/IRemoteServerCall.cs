@@ -1,10 +1,11 @@
 ﻿namespace DownloadManagerCli.Abstraction.Interfaces
 {
+    using DownloadManagerCli.Model.DownloadSource;
     using System;
     using System.Threading.Tasks;
     public interface IRemoteServerCall
     {
-        Task<byte[]> GetBytesAsync(Uri uri);
-        Task<byte[]> GetBytesAsync(string ftpPath);
+        Task<string> DownloadAsync(Uri uri, string downloadToFilePath, bool overwrite);
+        void ValidateDownloadedFile(string[] filePaths);
     }
 }

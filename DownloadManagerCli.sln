@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadManagerCli", "DownloadManagerCli\DownloadManagerCli.csproj", "{FB92005C-71CD-4BFB-8C39-14EC747FF832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DownloadManagerCli", "DownloadManagerCli\DownloadManagerCli.csproj", "{FB92005C-71CD-4BFB-8C39-14EC747FF832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadManagerCli.Abstraction", "DownloadManagerCli.Abstraction\DownloadManagerCli.Abstraction.csproj", "{1A33552A-6387-40B9-AC8E-F0ADD852C883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DownloadManagerCli.Abstraction", "DownloadManagerCli.Abstraction\DownloadManagerCli.Abstraction.csproj", "{1A33552A-6387-40B9-AC8E-F0ADD852C883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadManagerCli.Model", "DownloadManagerCli.Model\DownloadManagerCli.Model.csproj", "{96F3456C-0D14-476E-BC54-652088B7313F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DownloadManagerCli.Model", "DownloadManagerCli.Model\DownloadManagerCli.Model.csproj", "{96F3456C-0D14-476E-BC54-652088B7313F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadManagerCli.Engine", "DownloadManagerCli.Engine\DownloadManagerCli.Engine.csproj", "{817B2280-ABD9-4139-B177-7E8CEFBF8289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DownloadManagerCli.Engine", "DownloadManagerCli.Engine\DownloadManagerCli.Engine.csproj", "{817B2280-ABD9-4139-B177-7E8CEFBF8289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadManagerCli.IntegrationTests", "DownloadManagerCli.IntegrationTests\DownloadManagerCli.IntegrationTests.csproj", "{003052EA-2877-42A3-8C16-1EBF88348F75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6B70CF5-FBEE-4E79-8E28-DCC88920048F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{817B2280-ABD9-4139-B177-7E8CEFBF8289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{817B2280-ABD9-4139-B177-7E8CEFBF8289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{817B2280-ABD9-4139-B177-7E8CEFBF8289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003052EA-2877-42A3-8C16-1EBF88348F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003052EA-2877-42A3-8C16-1EBF88348F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003052EA-2877-42A3-8C16-1EBF88348F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003052EA-2877-42A3-8C16-1EBF88348F75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{003052EA-2877-42A3-8C16-1EBF88348F75} = {C6B70CF5-FBEE-4E79-8E28-DCC88920048F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23CBD28E-88C2-4A96-9D83-191A2E7D3761}
