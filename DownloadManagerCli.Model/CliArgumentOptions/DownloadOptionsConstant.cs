@@ -1,6 +1,6 @@
 ﻿namespace DownloadManagerCli.Model.CliArgumentOptions
 {
-    class DownloadOptionsConstant
+    internal class DownloadArgumentsConstant
     {
         public const string Download_Verbose = "Provides details about the file downloads.";
         public const string Download_DryRun = "Provides meta information about the download process.";

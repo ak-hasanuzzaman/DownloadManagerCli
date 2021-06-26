@@ -135,6 +135,15 @@
           "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Extensions.Options/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -197,7 +206,7 @@
       },
       "DownloadManagerCli.Model/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "CommandLineParser": "2.8.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
@@ -367,7 +376,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
-      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "sha512": "3ycnTwLNZTTCyhtZ19e6QIkyIG98MqrnuMtdF6c3cw5JD9Sot34nremRrJGoBdOQe2PcLER2p67q/XhVqaWk3g==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
       "files": [
@@ -446,8 +455,28 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "sha512": "rrVmzoZXZ/qL/xrmnA2oU75Y2bqSVl9yK8t8VoTnf1AC0wXXY+orm0eCP4gmjV/+h49CANA99JQAiG1i6bZKww==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.Extensions.Options/5.0.0": {
-      "sha512": "CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
+      "sha512": "j/Xf3RwSBHya/vKNlpbl8lgrml8RTLwOrCYYfQ5de8ET7AZEi6dVeOjgfPGXvRm6MLueH+CCszPHghkZgcNFmg==",
       "type": "package",
       "path": "microsoft.extensions.options/5.0.0",
       "files": [
@@ -489,7 +518,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/5.0.0": {
-      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+      "sha512": "PlGYfiZ4HdBDRRf4f/l9bf5ZmlUUZvHJMVKe+ch1GrvCnsK95Gkl84xW/V5xON6cjHqaddQQMp2neg6jML/37g==",
       "type": "package",
       "path": "microsoft.extensions.primitives/5.0.0",
       "files": [
@@ -549,23 +578,28 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DownloadManagerCli.Abstraction >= 1.0.0",
+      "Microsoft.Extensions.Logging.Abstractions >= 5.0.0",
       "YamlDotNet >= 9.1.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahasanuz\\.nuget\\packages\\": {}
+    "C:\\Users\\akhas\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+      "projectUniqueName": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
       "projectName": "DownloadManagerCli.Engine",
-      "projectPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
-      "packagesPath": "C:\\Users\\ahasanuz\\.nuget\\packages\\",
-      "outputPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Engine\\obj\\",
+      "projectPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+      "packagesPath": "C:\\Users\\akhas\\.nuget\\packages\\",
+      "outputPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ahasanuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\akhas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -579,8 +613,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj": {
-              "projectPath": "C:\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj"
+            "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj": {
+              "projectPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj"
             }
           }
         }
@@ -595,6 +629,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "YamlDotNet": {
             "target": "Package",
             "version": "[9.1.4, )"
@@ -615,7 +653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

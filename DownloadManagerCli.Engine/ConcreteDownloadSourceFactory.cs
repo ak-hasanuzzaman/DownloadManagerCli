@@ -2,26 +2,20 @@
 namespace DownloadManagerCli.Engine
 {
     using DownloadManagerCli.Abstraction.AbstractBase;
-    using DownloadManagerCli.Abstraction.AbstractClasses;
     using DownloadManagerCli.Engine.ProcessInputFile;
     using DownloadManagerCli.Model.Enums;
     
-    public sealed class ConcreteDownloadSourceFactory : DownloadSourceFactory
+    internal static class DownloadSourceFactory 
     {
-        public override DownloadSourceBase GetDownloadSource(string sourceType)
+        public static DownloadSourceBase GetDownloadSource(string sourceType)
         {
-            switch (sourceType)
+            return sourceType switch
             {
-                case nameof(DownloadSourceEnum.YMAL):
-                case nameof(DownloadSourceEnum.YML):
-                    return new ReadYamlSource();
-                case nameof(DownloadSourceEnum.JSON):
-                    return new ReadJsonSource();
-                case nameof(DownloadSourceEnum.XML):
-                    return new ReadXmlSource();
-                default:
-                    throw new System.Exception("Source type provided is invalid");
-            }
+                nameof(DownloadSourceEnum.YMAL) or nameof(DownloadSourceEnum.YML) => new ReadYamlSource(),
+                nameof(DownloadSourceEnum.JSON) => new ReadJsonSource(),
+                nameof(DownloadSourceEnum.XML) => new ReadXmlSource(),
+                _ => throw new System.Exception("Source type provided is invalid"),
+            };
         }
     }
 }

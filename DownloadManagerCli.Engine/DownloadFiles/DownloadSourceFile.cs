@@ -2,22 +2,28 @@
 {
     using DownloadManagerCli.Abstraction.Interfaces;
     using DownloadManagerCli.Model.DownloadSource;
+    using Microsoft.Extensions.Logging;
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using System.Net.Http;
+    using System.Threading;
     using System.Threading.Tasks;
-    public class DownloadSourceFile : IDownloadSourceFile
+    internal sealed class DownloadSourceFile : IDownloadSourceFile
     {
-        readonly IRemoteServerCall _remoteServerCall;
+        readonly ICallRemoteServer _remoteServerCall;
         private static int Count;
+        private readonly ILogger<DownloadSourceFile> _logger;
+        static SemaphoreSlim _semaphoreSlim = null;
 
-        public DownloadSourceFile(IRemoteServerCall remoteServerCall)
+        public DownloadSourceFile(ICallRemoteServer remoteServerCall, ILogger<DownloadSourceFile> logger)
         {
+            _logger = logger;
             _remoteServerCall = remoteServerCall;
+            _semaphoreSlim = new SemaphoreSlim(3, 3);
         }
-        public async Task DownloadAsync(Source downloadSource)
+        
+        public async Task DownloadAsync(InputSource downloadSource)
         {
             if (!Directory.Exists(downloadSource.Config.DownloadDirectory))
                 Directory.CreateDirectory(downloadSource.Config.DownloadDirectory);
@@ -28,16 +34,7 @@
             if (!downloadSource.Verbose)
                 Console.WriteLine("Download completed.");
         }
-
-        //public async Task DownloadUrlAsync(Uri url)
-        //{
-        //    using var httpClient = new HttpClient();
-        //    var r = await httpClient.GetAsync(url);
-
-        //    var fileBytes = await r.Content.ReadAsByteArrayAsync();
-        //    Console.WriteLine(url.AbsoluteUri + "done");
-
-        //}
+        
         public void ExecuteDryRun(bool isVerbose, Download[] downloads)
         {
             if (isVerbose)
@@ -57,52 +54,59 @@
             }
         }
 
-        private async Task ProcessParallelDownloadsAsync(Source downloadSource)
+        private async Task ProcessParallelDownloadsAsync(InputSource inputSource)
         {
-            var taskResults = new List<string>();
+            _semaphoreSlim = new SemaphoreSlim(inputSource.Config.ParallelDownloads, inputSource.Config.ParallelDownloads);
 
-            for (var i = 0; i < downloadSource.Downloads.Length; i = i + downloadSource.Config.ParallelDownloads)
-            {
-                var urlsToBeDownloaded = downloadSource.Downloads
-                                                            .Skip(i)
-                                                                .Take(downloadSource.Config.ParallelDownloads);
+            var tasks = GetDownloadTasks(inputSource, inputSource.Downloads.AsEnumerable());
 
-                var tasks = GetDownloadTasks(downloadSource, urlsToBeDownloaded);
+            await Task
+                    .WhenAll(tasks)
+                       .ConfigureAwait(false);
 
-
-                string[] results = await Task.WhenAll(tasks)
-                            .ConfigureAwait(false);
-
-                taskResults.AddRange(results);
-            }
-
-            var filePaths = taskResults?.Select(r => Path.Combine(downloadSource.Config.DownloadDirectory, r));
-            _remoteServerCall.ValidateDownloadedFile(filePaths?.ToArray());
+            _logger.LogInformation("All tasks are completed");
         }
 
-        private IEnumerable<Task<string>> GetDownloadTasks(Source downloadSource, IEnumerable<Download> urlsToBeDownloaded)
+        private IEnumerable<Task> GetDownloadTasks(InputSource inputSource,
+            IEnumerable<Download> urlsToBeDownloaded)
         {
-            Console.WriteLine();
-            foreach (var item in urlsToBeDownloaded)
+            var r = urlsToBeDownloaded?.ToArray();
+            var tasks = new Task[r.Length];
+
+            for (int j = 0; j < r?.Length; j++)
             {
-                Count += 1;
+                var item = r[j];
 
-                if (!downloadSource.Verbose)
-                    Console.WriteLine($"Download file # {Count}....");
+                var downloadToFilePath = Path.Combine(inputSource.Config.DownloadDirectory, item.File);
 
-                if (downloadSource.Verbose)
-                    Console.WriteLine($"File # {Count} of {downloadSource.Downloads.Length} File name : {item.File.ToUpper()} is downloading");
-
-                var downloadToFilePath = Path.Combine(downloadSource.Config.DownloadDirectory, item.File);
-                if (!Path.HasExtension(downloadToFilePath))
+                tasks[j] = Task.Run(async () =>
                 {
-                    Console.WriteLine($"File name : {item.File.ToUpper()} does not have an extension");
-                    continue;
-                }
-                var task = _remoteServerCall
-                                .DownloadAsync(item.Url, downloadToFilePath, item.Overwrite);
+                    Count += 1;
+                    await DownloadAsync(item, downloadToFilePath, Count);
+                });
+            }
+            return tasks;
+        }
 
-                yield return task;
+        private async Task DownloadAsync(Download item, string downloadToFilePath, int count)
+        {
+            Console.WriteLine($"Task {count} begins and waits for the semaphore.");
+
+            _semaphoreSlim.Wait();
+
+            try
+            {
+                Console.WriteLine($"Task {count} enters the semaphore.");
+
+                await _remoteServerCall
+                            .DownloadAsync(item.Url, downloadToFilePath, item.Overwrite)
+                                .ConfigureAwait(false);
+
+                Console.WriteLine($"Task {count} releases the semaphore");
+            }
+            finally
+            {
+                _semaphoreSlim.Release();
             }
         }
     }

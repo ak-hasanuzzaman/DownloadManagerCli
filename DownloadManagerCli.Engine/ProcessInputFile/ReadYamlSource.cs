@@ -4,19 +4,19 @@
     using DownloadManagerCli.Model.DownloadSource;
     using YamlDotNet.Serialization;
     using YamlDotNet.Serialization.NamingConventions;
-    public sealed partial class ReadYamlSource : DownloadSourceBase
+    internal sealed partial class ReadYamlSource : DownloadSourceBase
     {
-        public sealed override Source GetSourceObjectFromFile(string path)
+        public sealed override InputSource GetSourceObjectFromFile(string path)
         {
             return base.GetSourceObjectFromFile(path);
         }
-        protected sealed override Source ConverSourceToObject(string yaml)
+        protected sealed override InputSource ConverSourceToObject(string yaml)
         {
             var deserializer = new DeserializerBuilder()
                    .WithNamingConvention(UnderscoredNamingConvention.Instance)
                    .Build();
 
-            var source = deserializer.Deserialize<Source>(yaml);
+            var source = deserializer.Deserialize<InputSource>(yaml);
             return source;
         }
     }

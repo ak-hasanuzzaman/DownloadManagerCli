@@ -4,8 +4,8 @@
     using System.IO;
     public abstract class DownloadSourceBase
     {
-        protected abstract Source ConverSourceToObject(string fileText);
-        public virtual Source GetSourceObjectFromFile(string path)
+        protected abstract InputSource ConverSourceToObject(string fileText);
+        public virtual InputSource GetSourceObjectFromFile(string path)
         {
             var source = File.ReadAllText(path);
             var downloadSource = ConverSourceToObject(source);

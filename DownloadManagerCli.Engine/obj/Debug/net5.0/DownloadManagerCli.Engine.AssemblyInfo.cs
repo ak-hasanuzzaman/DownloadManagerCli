@@ -11,6 +11,8 @@
 using System;
 using System.Reflection;
 
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DownloadManagerCli.UnitTests")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DownloadManagerCliApp")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DownloadManagerCli.Engine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
