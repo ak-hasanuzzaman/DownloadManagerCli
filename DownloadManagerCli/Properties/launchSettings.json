@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "DownloadManagerCli": {
-      "commandName": "Project",
-      "commandLineArgs": "download -d true -v true -f \"C:\\\\DownloadManagerCli\\\\DownloadManagerCli\\\\InputSource\\\\downloadsource.yml\""
-    }
-  }
-}

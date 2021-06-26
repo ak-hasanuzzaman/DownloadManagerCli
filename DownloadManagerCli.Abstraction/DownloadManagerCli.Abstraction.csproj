@@ -6,7 +6,6 @@
 
 	<ItemGroup>
 		<Compile Remove="Interfaces\IContentWriter.cs" />
-		<Compile Remove="Interfaces\IDownloadFile.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
