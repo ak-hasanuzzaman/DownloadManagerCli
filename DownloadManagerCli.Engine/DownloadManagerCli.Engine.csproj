@@ -6,6 +6,7 @@
 
 	<ItemGroup>
 		<Compile Remove="DownloadFiles\ContentWriter.cs" />
+		<Compile Remove="Validate\ValidateSource.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -21,6 +22,10 @@
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
 			<_Parameter1>DownloadManagerCliApp</_Parameter1>
 		</AssemblyAttribute>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Validate\" />
 	</ItemGroup>
 
 </Project>

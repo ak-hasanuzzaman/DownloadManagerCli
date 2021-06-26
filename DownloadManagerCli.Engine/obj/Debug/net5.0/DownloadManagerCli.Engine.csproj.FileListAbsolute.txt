@@ -1,0 +1,17 @@
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.csprojAssemblyReference.cache
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.AssemblyInfoInputs.cache
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.AssemblyInfo.cs
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.csproj.CoreCompileInputs.cache
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\ref\DownloadManagerCli.Engine.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.pdb
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Engine.deps.json
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Engine.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\ref\DownloadManagerCli.Engine.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Engine.pdb
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Abstraction.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Model.dll
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Abstraction.pdb
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\bin\Debug\net5.0\DownloadManagerCli.Model.pdb
+C:\DEV\DownloadManagerCli\DownloadManagerCli.Engine\obj\Debug\net5.0\DownloadManagerCli.Engine.csproj.CopyComplete

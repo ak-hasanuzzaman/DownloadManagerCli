@@ -589,11 +589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+      "projectUniqueName": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
       "projectName": "DownloadManagerCli.Engine",
-      "projectPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+      "projectPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
       "packagesPath": "C:\\Users\\akhas\\.nuget\\packages\\",
-      "outputPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\obj\\",
+      "outputPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -613,8 +613,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj": {
-              "projectPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj"
+            "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj": {
+              "projectPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj"
             }
           }
         }

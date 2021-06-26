@@ -11,21 +11,21 @@
          'v',
          "verbose",
          Required = false,
-         HelpText = DownloadOptionsConstant.Download_Verbose)]
+         HelpText = DownloadArgumentsConstant.Download_Verbose)]
         public bool Verbose { get; set; }
 
         [Option(
             'r',
             "dryrun",
             Required = false,
-            HelpText = DownloadOptionsConstant.Download_DryRun)]
+            HelpText = DownloadArgumentsConstant.Download_DryRun)]
         public bool DryRun { get; set; }
 
         [Option(
         'f',
         "filepath",
         Required = true,
-        HelpText = DownloadOptionsConstant.Download_FilePath)]
+        HelpText = DownloadArgumentsConstant.Download_FilePath)]
         public string FilePath { get; set; }
 
         [Option(

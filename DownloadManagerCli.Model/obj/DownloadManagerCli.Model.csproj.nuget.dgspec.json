@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {}
+    "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {
+    "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
+        "projectUniqueName": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
         "projectName": "DownloadManagerCli.Model",
-        "projectPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
+        "projectPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\DownloadManagerCli.Model.csproj",
         "packagesPath": "C:\\Users\\akhas\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Model\\obj\\",
+        "outputPath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

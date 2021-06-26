@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B9AWWFnNOA7DM3wDgJRS+WALzEnTw7sBZBMlF9sCx8ePlUj8+cytMEgo7mqPnFi6AU/eVbu19w0yWOAu+DjWPQ==",
+  "dgSpecHash": "hvwntANiUQhPmXU2Dp76ImJcwdTBXYpqhKiP85zDQMtmg8pwvCytr5nEN3pl9tQkFGzTisFsKZxQvICwA39Rlw==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj",
+  "projectFilePath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Abstraction\\DownloadManagerCli.Abstraction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akhas\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
     "C:\\Users\\akhas\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rs31BZ8S7iBJspu7rR0EzpiTTsuZE1qsKT3TTZsbSC8xBI+4fgJnVQBKXVHjdRR2TP2EdKKsQlnHGzZ5d2eQVw==",
+  "dgSpecHash": "vPaxxJvJpdBHQ/aop1ZKiX50pAhScNZrll/MUrmYB9mpI4959o1/RZovphgJh6q6KGd+5Trwy549BJ36DYCiTQ==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\DownloadManagerCliApp\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
+  "projectFilePath": "C:\\DEV\\DownloadManagerCli\\DownloadManagerCli.Engine\\DownloadManagerCli.Engine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akhas\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
     "C:\\Users\\akhas\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
